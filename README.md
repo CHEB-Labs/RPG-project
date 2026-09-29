@@ -1,3 +1,3 @@
 ## Team
 
-![](./CONTRIBUTOR MURAL.svg)
+![](./CONTRIBUTOR_MURAL.svg)

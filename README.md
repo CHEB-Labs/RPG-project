@@ -1,4 +1,4 @@
-⚔️ Convictus
+## ⚔️ Convictus
 
 Convictus is a browser-based battle game developed in PHP, focused on applying Object-Oriented Programming (OOP) concepts, database integration, and turn-based battle systems.
 
@@ -6,7 +6,7 @@ The project was developed as an academic project for a Systems Development cours
 
 ---
 
-🎮 About the Project
+# 🎮 About the Project
 
 Convictus is a dungeon-style battle game where the player controls a team of characters and faces a team of enemies.
 
@@ -27,7 +27,7 @@ The current system includes:
 
 ---
 
-🧱 Technologies Used
+# 🧱 Technologies Used
 
 Technology| Purpose
 PHP| Game logic and backend
@@ -39,7 +39,7 @@ PDO| Database connection
 
 ---
 
-🧠 Object-Oriented Programming
+# 🧠 Object-Oriented Programming
 
 The project uses OOP to organize the main game systems.
 
@@ -122,7 +122,7 @@ After turn 5, the system returns to turn 0.
 
 ---
 
-🗄️ Database
+# 🗄️ Database
 
 The game uses a database to store character and attack information.
 
@@ -184,7 +184,7 @@ Jogo Convictus/
 
 ---
 
-🔌 Repositories
+# 🔌 Repositories
 
 The project uses Repository classes to handle communication between the game classes and the database.
 
@@ -206,7 +206,7 @@ This separation keeps SQL queries outside the main game pages and helps organize
 
 ---
 
-💾 Session System
+# 💾 Session System
 
 During a battle, the current game state is stored using PHP sessions.
 
@@ -226,7 +226,7 @@ option that removes the battle data from the session and starts a new battle.
 
 ---
 
-⚔️ Battle System
+# ⚔️ Battle System
 
 The battle works through a turn-based system.
 
@@ -246,7 +246,7 @@ When an enemy's turn begins, the enemy AI automatically performs an attack.
 
 ---
 
-🤖 Enemy AI
+# 🤖 Enemy AI
 
 The enemies use a basic AI system.
 
@@ -263,7 +263,7 @@ The goal is to provide functional enemy behavior while keeping the system simple
 
 ---
 
-🎨 Interface
+# 🎨 Interface
 
 The battle interface was developed using HTML and CSS.
 
@@ -293,7 +293,7 @@ Contains:
 
 ---
 
-🖥️ How to Run
+# 🖥️ How to Run
 
 The project was developed using XAMPP.
 
@@ -326,7 +326,7 @@ The main page provides access to the dungeon.
 
 ---
 
-🧪 Testing
+# 🧪 Testing
 
 Several tests were performed during development to verify the individual systems before integrating them into the final interface.
 
@@ -345,7 +345,7 @@ Tests included:
 
 ---
 
-🚧 Future Development
+# 🚧 Future Development
 
 The project can be expanded with additional features in the future, such as:
 
@@ -365,7 +365,7 @@ These features were intentionally left for future development so that the initia
 
 ---
 
-📌 Project Status
+# 📌 Project Status
 
 Functional Academic Version
 

@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    overflow: hidden;
+}
+
+
+/* ========================= */
+/* TELA DA BATALHA */
+/* ========================= */
+
+.batalha {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ========================= */
+/* ARENA */
+/* ========================= */
+
+.arena {
+    position: relative;
+
+    flex: 1;
+
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../img/cenarios/dungeon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================= */
+/* PARTE SUPERIOR */
+/* ========================= */
+
+.topo-arena {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: start;
+
+    padding: 20px 35px;
+}
+
+
+/* ========================= */
+/* BARRAS DAS EQUIPES */
+/* ========================= */
+
+.vida-equipe {
+    width: 300px;
+}
+
+.vida-inimiga {
+    justify-self: end;
+    text-align: right;
+}
+
+.vida-equipe h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.barras-equipe {
+    display: flex;
+    gap: 8px;
+}
+
+.vida-inimiga .barras-equipe {
+    justify-content: flex-end;
+}
+
+.barra-personagem {
+    width: 80px;
+}
+
+.barra-personagem span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.barra-hp {
+    width: 80px;
+    height: 9px;
+
+    background: #555;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+.hp-atual {
+    height: 100%;
+
+    background: #35c759;
+
+    transition: width 0.3s;
+}
+
+
+/* ========================= */
+/* TURNO */
+/* ========================= */
+
+.turno {
+    text-align: center;
+
+    font-size: 18px;
+
+    padding-top: 5px;
+}
+
+.turno span {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+}
+
+.turno strong {
+    font-size: 21px;
+}
+
+
+/* ========================= */
+/* PERSONAGENS NA ARENA */
+/* ========================= */
+
+.personagens-arena {
+    flex: 1;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    padding: 0 70px 35px;
+}
+
+
+/* ========================= */
+/* EQUIPES */
+/* ========================= */
+
+.personagens-jogador,
+.personagens-inimigos {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 100px;
+
+    width: 35%;
+}
+
+.personagens-inimigos {
+    justify-content: flex-end;
+}
+
+
+/* ========================= */
+/* PERSONAGENS */
+/* ========================= */
+
+.personagem {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    width: 80px;
+    height: 100px;
+}
+
+.personagem img {
+    display: block;
+
+    width: 305px;
+    height: 205px;
+
+    object-fit: contain;
+}
+
+
+/* Inimigos olhando para a esquerda */
+
+.personagens-inimigos .personagem img {
+    transform: scaleX(-1);
+}
+
+
+/* ========================= */
+/* PAINEL INFERIOR */
+/* ========================= */
+
+.painel-batalha {
+    width: 100%;
+
+    min-height: 210px;
+
+    padding: 18px 40px;
+
+    background: #181818;
+
+    border-top: 2px solid #444;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+/* ========================= */
+/* INFORMAÇÕES */
+/* ========================= */
+
+.informacoes {
+    display: none;
+}
+
+
+/* ========================= */
+/* MENSAGEM */
+/* ========================= */
+
+.mensagem {
+    width: min(850px, 90%);
+
+    min-height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 12px 20px;
+
+    background: #222;
+
+    border: 1px solid #555;
+
+    border-radius: 6px;
+
+    text-align: center;
+
+    font-size: 16px;
+}
+
+
+/* ========================= */
+/* ATAQUES */
+/* ========================= */
+
+.ataques {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* Cada formulário ocupa somente o espaço do botão */
+
+.ataques form {
+    margin: 0;
+}
+
+
+/* Botões */
+
+.ataques button {
+    min-width: 190px;
+
+    padding: 13px 20px;
+
+    border: 1px solid #666;
+
+    border-radius: 6px;
+
+    background: #333;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        transform 0.1s;
+}
+
+.ataques button:hover {
+    background: #444;
+
+    transform: translateY(-2px);
+}
+
+.ataques button:active {
+    transform: translateY(0);
+}
+
+
+/* ========================= */
+/* REINICIAR */
+/* ========================= */
+
+.reiniciar {
+    margin-top: 2px;
+}
+
+.reiniciar button {
+    padding: 7px 18px;
+
+    border: 1px solid #555;
+
+    border-radius: 5px;
+
+    background: #222;
+
+    color: #aaa;
+
+    cursor: pointer;
+}
+
+.reiniciar button:hover {
+    background: #333;
+
+    color: white;
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #111;
+    color: white;
+    overflow: hidden;
+}
+
+
+/* ========================= */
+/* FONTE PIXELADA MEDIEVAL */
+/* ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+
+.menu-dungeon {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    /* Nunca menos que 60px nem mais que 220px de distância da borda,
+       e entre isso, 15% da largura da tela — fica sempre "pra esquerda"
+       sem colar na borda em nenhuma resolução */
+    padding-left: clamp(60px, 15vw, 115px);
+
+    background-image: url("../img/cenarios/Menu.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================= */
+/* OPÇÕES */
+/* ========================= */
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+}
+
+
+/* ========================= */
+/* TEXTO JOGAR */
+/* ========================= */
+
+.opcoes a {
+    color: #d8bd82;
+
+    text-decoration: none;
+
+    font-family: 'Jacquard 24', 'Courier New', monospace;
+    font-size: 34px;
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        3px 3px 0 #24180f,
+        -1px -1px 0 #24180f;
+
+    transition:
+        color 0.15s,
+        transform 0.15s;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.opcoes a:hover {
+    color: #f0d69b;
+
+    transform: scale(1.08);
+}

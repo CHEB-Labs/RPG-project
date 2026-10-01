@@ -29,6 +29,7 @@ The current system includes:
 
 ## 🧱 Technologies Used
 
+```text
 Technology| Purpose
 PHP| Game logic and backend
 MySQL/MariaDB| Database
@@ -36,6 +37,7 @@ HTML| Page structure
 CSS| Interface and styling
 XAMPP| Local development environment
 PDO| Database connection
+```
 
 ---
 
@@ -161,28 +163,32 @@ The main project structure is:
 ```text
 Jogo Convictus/
 │
-├── classes/
-│   ├── Personagem.php
-│   ├── PersonagemRepository.php
-│   ├── Ataque.php
-│   ├── AtaqueRepository.php
-│   ├── Equipe.php
-│   └── Batalha.php
+│── DataBase/
+│    └── convictus_data.sql
 │
-├── config/
-│   └── conexao.php
+├── classes/
+│   ├── Ataque.php
+│   ├── AtqqueRepository.php
+│   ├── Batalha.php
+│   ├── Dungeon.php
+│   ├── Equipe.php
+|   ├── Personagem.php
+│   └── PersonagemRepository.php
+│
+├── css/
+|   ├── dungeon.css
+│   └── Style.css
 │
 ├── dungeon/
+|   ├── index.php
+|   ├── recuperacao.php
+|   ├── resultado.php
 │   └── batalha.php
 │
 ├── img/
 │   ├── personagens/
 │   └── inimigos/
-│
-├── css/
-│   ├── dungeon.css
-│   └── index.css
-│
+|
 └── index.php
 ```
 

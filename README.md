@@ -110,6 +110,7 @@ It controls:
 
 The current turn order is:
 
+```text
 Turn 0 → Player 1
 Turn 1 → Player 2
 Turn 2 → Player 3
@@ -117,6 +118,7 @@ Turn 2 → Player 3
 Turn 3 → Enemy 1
 Turn 4 → Enemy 2
 Turn 5 → Enemy 3
+```
 
 After turn 5, the system returns to turn 0.
 

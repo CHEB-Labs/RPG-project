@@ -156,6 +156,7 @@ The relationship between the tables allows each character to have their own atta
 
 The main project structure is:
 
+```text
 Jogo Convictus/
 │
 ├── classes/
@@ -181,6 +182,7 @@ Jogo Convictus/
 │   └── index.css
 │
 └── index.php
+```
 
 ---
 
